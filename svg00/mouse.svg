@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>svg 00</title>
-    <style>
-        svg{background-color: blanchedalmond;}
-    </style>
-</head>
-<body>
-    <h1>Ejemplo 0 - SVG</h1>
-   <!-- <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
         <circle cx="150" cy="160" r="30" fill="gray" stroke="currentColor" stroke-width="2"></circle>
         <circle cx="250" cy="160" r="30" fill="gray" stroke="currentColor" stroke-width="2"></circle>
         <circle cx="150" cy="160" r="20" fill="pink" stroke="currentColor" stroke-width="2"></circle>
@@ -28,7 +16,4 @@
         
         
         
-    </svg> -->
-    <img src="mouse.svg" alt="es un ratoncito">
-</body>
-</html>
+    </svg>
