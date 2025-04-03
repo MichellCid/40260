@@ -1,0 +1,32 @@
+<?xmlo version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alumnos [
+    <!ELEMENT  alumnos (alumno*)>
+	<!ELEMENT  alumno (nombre, apellido, curso)>
+	<!ELEMENT  nombre (#PCDATA)>
+	<!ELEMENT apellido (#PCDATA)>
+    <!ELEMENT curso (#PCDATA)>
+
+    <!ATTLIST alumno
+    id ID #REQUIRED
+    edad CDATA #IMPLIED
+    becado (si|no) "no">
+    
+]>
+
+<alumnos >
+    <alumno id="a1" becado="si">
+        <nombre>Mikasa </nombre>
+        <apellido>Ackerman</apellido>
+        <curso>Fundamentos</curso>
+    </alumno>
+    <alumno id="a2" edad="19">
+        <nombre>Millie</nombre>
+        <apellido>bobby</apellido>
+        <curso>web</curso>
+    </alumno>
+    <alumno id="a3" edad="21" becado="si">
+        <nombre>Billie Eilish</nombre>
+        <apellido>o'conell</apellido>
+        <curso>Programacion</curso>
+    </alumno>
+</alumnos>
