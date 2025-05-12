@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 02 modulos</title>
+</head>
+
+<body>
+
+    <button id="btnCargar">Ejecutar función</button>
+    <table id="demo"></table>
+
+    <script type="module">
+        
+        import { loadXMLDoc } from './pagina02M.js';
+        document.getElementById("btnCargar").addEventListener("click", loadXMLDoc);
+    </script>
+
+</body>
+</html>

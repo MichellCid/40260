@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            box-shadow: 10px 10px 20px rgb(111, 250, 169);
+            border-radius: 100%;
+        }
+
+        img.redonda{
+            border-radius: 10% 40% 30% 70%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script type="module" >
+        import { Picture, toggleClassOnClick} from './pagina06M.js';
+        document.getElementById('app').innerHTML = Picture(15, "John") + Picture(82, "Jane");
+        toggleClassOnClick();
+
+    </script>
+</body>
+</html>
