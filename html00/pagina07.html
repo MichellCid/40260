@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,13 +21,45 @@
     <form action="">
         
         <label for="user">Usuario</label>
-        <input type="text" id="user">
+        <input type="text" id="user" >
         <label for="password">Contraseña</label>
         <input type="password" id="password">
         <label for=""></label>
-        <input type="button" value="Iniciar Secion" id="enviar" >
+        <!-- <input type="button" value="Iniciar Secion" id="enviar" onclick="mostar()" > -->
+        <input type="button" value="Iniciar Secion" id="enviar"  >
     </form>
 
-    <script src="formulario.js"></script>
+    <script >
+        console.log("inicio")
+        const mostrar = ()=> {
+            console.log("los parametros")
+            let user=document.getElementById("user")
+            let password=document.getElementById("password")
+            //console.log(user+" "+password)
+            console.log(user.value)
+            console.log(password.value)
+
+            let formulario = document.getElementsByTagName("form")
+            console.log(formulario)
+            user.setAttribute("name", "q")
+            password.setAttribute("name", "password")
+            
+            formulario[0].setAttribute("action", "https://google.com/search")
+            formulario[0].submit()
+        }
+        const boton = document.getElementById("enviar")
+        boton.addEventListener("click", mostrar
+            // ()=> {
+            //     console.log("los parametros")
+            //     let user=document.getElementById("user")
+            //     let password=document.getElementById("password")
+            //     //console.log(user+" "+password)
+            //     console.log(user.value)
+            //     console.log(password.value)
+
+                
+            // }
+        )
+    </script>
 </body>
 </html>
